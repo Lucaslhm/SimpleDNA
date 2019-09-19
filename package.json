@@ -1,0 +1,30 @@
+{
+  "name": "SimpleDNA",
+  "version": "1.0.0",
+  "description": "Simple CLI Application for DNA",
+  "main": "./bin/index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucaslhm/SimpleDNA.git"
+  },
+  "keywords": [],
+  "author": "Lucas Machi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lucaslhm/SimpleDNA/issues"
+  },
+  "homepage": "https://github.com/Lucaslhm/SimpleDNA#readme",
+  "bin": {
+    "coffee-shop": "./bin/index.js"
+  },
+  "dependencies": {
+    "colors": "^1.3.3",
+    "commander": "^3.0.1",
+    "inquirer": "^7.0.0",
+    "lodash": "^4.17.15"
+  }
+}
