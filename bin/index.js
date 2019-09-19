@@ -2,39 +2,39 @@
 
 const program = require('commander');
 
-// import function to list coffeee menu
-const list = require('../lib/list');
+// import function to load a DNA
+const load = require('../lib/load');
 
-// import function to order a coffee
-const order = require('../lib/order');
+// import function to run quick anaylsis on model
+const quick = require('../lib/quick');
 
 /*******************************************/
 
-// Print coffee drinks menu
-// $ coffee-shop list
-// $ coffee-shop ls
+// Loads DNA into model
+// $ simpledna load
+// $ simpledna l
 program
-    .command('list') // sub-command name
-    .alias('ls') // alternative sub-command is `al`
-    .description('List coffee menu') // command description
+    .command('load') // sub-command name
+    .alias('l') // alternative sub-command is `l`
+    .description('Loads DNA into model') // command description
 
     // function to execute when command is uses
     .action(function () {
-        list();
+        load();
     });
 
 
-// Order a coffee
-// $ coffee-shop order
-// $ coffee-shop o
+// Runs a quick anaylsis on a loaded model
+// $ coffee-shop quick
+// $ coffee-shop q
 program
-    .command('order') // sub-command name
-    .alias('o') // alternative sub-command is `o`
-    .description('Order a coffee') // command description
+    .command('quick') // sub-command name
+    .alias('q') // alternative sub-command is `o`
+    .description('Runs a quick anaylsis on a loaded model') // command description
 
     // function to execute when command is uses
     .action(function () {
-        order();
+        quick();
     });
 
 

@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Lucaslhm/SimpleDNA#readme",
   "bin": {
-    "coffee-shop": "./bin/index.js"
+    "sdna": "./bin/index.js"
   },
   "dependencies": {
     "colors": "^1.3.3",
